@@ -1,0 +1,6 @@
+industrial        1
+casestudy        1
+a        1
+waterjet        1
+cutting        1
+workcell        1
