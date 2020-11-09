@@ -1,6 +1,6 @@
 # Data Analysis using Python 
-Information Retrieval - Web pages Document Spawning - Document Analysis
-We discuss the method for implementing agglomerative clustering for the documents, based on TF-IDF score from HTML documents. Further, the discussion continues about its performance and comparisons based on the tokenization method and overall time complexity is shown. The explanation of code and the process is discussed in a greater detail. 
+# Information Retrieval - Web pages Document Spawning - Document Analysis
+This project discusses the methods for implementing agglomerative clustering for the documents, based on TF-IDF score from HTML documents. Further, the discussion continues about its performance and comparisons based on the tokenization method and overall time complexity is shown. The explanation of code and the process is discussed in a greater detail. 
 
 
 The data available in raw format can have multiple dimensions of representation, which is accessible in random order. Thus, efficient setup of data into a representation is always been a challenge in Information Retrieval field. The Information Retrieval domain deals with scenarios where we store data in the disk with a representation, when query is fired, this representation helps to retrieve the data efficiently. This efficiency can be in terms of retrieval speed, storage required, ranking and recommendation and many other tasks. The ultimate task of the information retrieval is to get the data, send the requested information to the user which is relevant to the query in minimum amount of time.
@@ -13,7 +13,7 @@ The term indexing and its methods are used to have better representation of the 
 
 The agglomerative clustering is the way to cluster the items, or documents according to the similarity score computed within the samples provided. To represent the document in the feature space, we select TFIDF as feature dimensions. We pad TFIDF scores with zeros to make it of same length and define the linkage between documents based on similarity score. The similarity score that we are having for the experiment is Cosine similarity. For the next step, we will do the average of the two-cosine similarity vector. The agglomerative clustering will be performed over this similarity scores.
 
-METHODOLOGY 
+# Methodology 
 
 When we start the procedure, we first give the number of documents that we need to take into consideration for computing the TF-IDF scores, as we are performing the batch processing. In batch processing, we assume that the data is appearing in a single batch, and we have the access of all the data provided as that batch. Once the batch is acquired, we will process the fragments in the batch and tokenize the data based on 3 parametric regular expressions, that is Upper-case and Lower-case characters, numbers and punctuations marks. First the sentence is tokenized, then the corresponding words and in last the characters. 
  
