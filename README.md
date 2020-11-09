@@ -29,10 +29,10 @@ Finally, once the scores are generated, they are saved to the disk, for one inpu
 
 Now after computing the scores of the TFIDF, we will use them to process the query, the query is presented in the same way we do preprocess. The query provided is tokenized, and then passed to retrieve method. The constraint of this method is that we need the preprocessed TFIDF scores. Here, we use the brute force method to find the matching documents. Process goes like following:
 
-•	Load weights files to RAM (form a dictionary of keys as tokens and value as TFIDF scores)
-•	Get the query and tokenize the same way as they process the data.
-•	Get the weights for the query words in list from user
-•	We do brute force search within all dictionary of the documents and score the documents based on the weights and query provide
-•	We rank the documents with respect to score computed and sort them in descending order.
-•	Perform agglomerative clustering of all the documents and create a dendogram implementing the clustering.
-•	Cease the clustering when no two clusters (or documents) have similarity greater than 0.4. 
+-	Load weights files to RAM (form a dictionary of keys as tokens and value as TFIDF scores)
+-	Get the query and tokenize the same way as they process the data.
+-	Get the weights for the query words in list from user
+-	We do brute force search within all dictionary of the documents and score the documents based on the weights and query provide
+-	We rank the documents with respect to score computed and sort them in descending order.
+-	Perform agglomerative clustering of all the documents and create a dendogram implementing the clustering.
+-	Cease the clustering when no two clusters (or documents) have similarity greater than 0.4. 
